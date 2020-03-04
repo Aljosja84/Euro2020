@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 
 $current_time = Carbon::now();
 
-$tweets = DB::table('tweets')->get();
+$tweets = DB::table('tweets')->where('id', '>=', 318)->latest()->get();
 echo count($tweets);
 echo "<br>";
 
