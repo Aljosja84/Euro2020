@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/listen', function () {
     return view('listen');
 });
+
+Route::get('/map', function() {
+  return view('app.layout');
+});

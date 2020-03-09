@@ -29,18 +29,23 @@ class ListenForHashTags extends Command
      */
     public function handle()
     {
+        //setLocale('nl') -- only dutch tweets
         TwitterStreamingApi::publicStream()
-            ->whenHears('#food', function (array $tweet) {
+            ->whenHears('#gropsv', function (array $tweet) {
+              //check if we have a place or coordinates
+
                 // insert the tweets into the database
                 DB::table('tweets')->insert([
                     'userName' => "{$tweet['user']['screen_name']}",
                     'tweet' => "{$tweet['text']}",
                     'avatar_url' => "{$tweet['user']['profile_image_url_https']}",
-                    'created_at' => \Carbon\Carbon::now()->getPreciseTimestamp(4)
+                    'created_at' => \Carbon\Carbon::now()->getPreciseTimestamp(4),
+                    'place' => 'nergens'
                     ]
                 );
                 // dump the tweet into the terminal
                 dump("{$tweet['user']['screen_name']} tweeted {$tweet['text']}");
+
             })
             ->startListening();
     }
