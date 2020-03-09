@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
         <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+        <link href="css/app.css" rel="stylesheet">
         <title>Laravel</title>
 
         <!-- Fonts -->
@@ -65,7 +66,8 @@
         </style>
     </head>
     <body>
-      <div class="flex-center" style="width:100%; height:50px; background:#000">
+      <div class="topmenu" style="position: absolute; z-index: 5">
+          <div class="flex-center"><img src="images/logo_euro2020.png"/></div>
         <a id="HOME" href="#" style="padding-right: 10px">HOME</a>
         <a id="AMS" href="#" style="padding-right: 10px">AMSTERDAM</a>
         <a id="GLA" href="#" style="padding-right: 10px">GLASGOW</a>
@@ -80,7 +82,7 @@
         <a id="PET" href="#" style="padding-right: 10px">SAINT PETERSBURG</a>
         <a id="BIL" href="#">BILBOA</a>
       </div>
-      <div id='map_background' style="height:100%; width:100%; position: fixed"></div>
+      <div id='map_background' style="height:100%; width:100%; position: absolute; z-index: 0"></div>
 
       <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoiYWxqb3NqYTg0IiwiYSI6ImNrN2RobzM0ZTA5ZGUzb253YnFlZDZ2M3gifQ.3E9_BSsxKdqU25O8R7KOpg';
