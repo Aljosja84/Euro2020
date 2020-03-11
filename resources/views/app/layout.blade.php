@@ -9,14 +9,14 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
         <!-- Styles -->
         <style>
             html, body {
                 background-color: #fff;
                 color: #636b6f;
-                font-family: 'Nunito', sans-serif;
+                font-family: 'Roboto', sans-serif;
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
@@ -67,20 +67,22 @@
     </head>
     <body>
       <div class="topmenu" style="position: absolute; z-index: 5">
-          <div class="flex-center"><img src="images/logo_euro2020.png"/></div>
-        <a id="HOME" href="#" style="padding-right: 10px">HOME</a>
-        <a id="AMS" href="#" style="padding-right: 10px">AMSTERDAM</a>
-        <a id="GLA" href="#" style="padding-right: 10px">GLASGOW</a>
-        <a id="BAK" href="#" style="padding-right: 10px">BAKU</a>
-        <a id="BUC" href="#" style="padding-right: 10px">BUCHAREST</a>
-        <a id="BUD" href="#" style="padding-right: 10px">BUDAPEST</a>
-        <a id="COP" href="#" style="padding-right: 10px">COPENHAGEN</a>
-        <a id="DUB" href="#" style="padding-right: 10px">DUBLIN</a>
-        <a id="LON" href="#" style="padding-right: 10px">LONDON</a>
-        <a id="MUN" href="#" style="padding-right: 10px">MUNICH</a>
-        <a id="ROM" href="#" style="padding-right: 10px">ROME</a>
-        <a id="PET" href="#" style="padding-right: 10px">SAINT PETERSBURG</a>
-        <a id="BIL" href="#">BILBOA</a>
+          <div class="flex-center"><img src="images/logo_euro2020.png" style="padding-left: 5px"/></div>
+          <div class="flex-center">
+        <a id="HOME" href="#" style="padding-right: 10px">Home</a>
+        <a id="AMS" href="#" style="padding-right: 10px">Amsterdam</a>
+        <a id="GLA" href="#" style="padding-right: 10px">Glasgow</a>
+        <a id="BAK" href="#" style="padding-right: 10px">Baku</a>
+        <a id="BUC" href="#" style="padding-right: 10px">Bucharest</a>
+        <a id="BUD" href="#" style="padding-right: 10px">Budapest</a>
+        <a id="COP" href="#" style="padding-right: 10px">Copenhagen</a>
+        <a id="DUB" href="#" style="padding-right: 10px">Dublin</a>
+        <a id="LON" href="#" style="padding-right: 10px">London</a>
+        <a id="MUN" href="#" style="padding-right: 10px">Munich</a>
+        <a id="ROM" href="#" style="padding-right: 10px">Rome</a>
+        <a id="PET" href="#" style="padding-right: 10px">Saint Petersburg</a>
+        <a id="BIL" href="#">Bilboa</a>
+          </div>
       </div>
       <div id='map_background' style="height:100%; width:100%; position: absolute; z-index: 0"></div>
 

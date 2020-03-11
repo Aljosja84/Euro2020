@@ -22,3 +22,7 @@ Route::get('/listen', function () {
 Route::get('/map', function() {
   return view('app.layout');
 });
+
+Route::get('/api', function() {
+    return view('app.apitest');
+});
